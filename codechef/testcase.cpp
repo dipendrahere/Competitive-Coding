@@ -1,19 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define ll long long
 int main(){
 	srand(time(0));
-	int t;
-	//srand(time(0));
-	// cin>>t;
-	t = 1+rand()%10+4;
+	int t = rand()%20+1;
 	cout<<t<<endl;
 	while(t--){
-		int n = 1+rand()%10+3;
-		int k = 1+rand()%(n-3);
+		ll n = rand()%10 + 1;
+		ll k = rand()%10;
 		cout<<n<<" "<<k<<endl;
-		while(n--){
-			cout<<1+rand()%9985+10<<" ";
-		}
-		cout<<endl;
 	}
 }
